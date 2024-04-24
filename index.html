@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar's Portfolio</title>
+    <!-- attach css file  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Link BoxIcons CSS:  Boxicons is a free collection of carefully crafted open source icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- This will load boxicons font into your webpage    -->
+</head>
+
+<body>
+
+    <!-- --------------------------------------------- Header ----------------------------------  -->
+    <div class="header">
+        <!-- logo  -->
+        <a href="#home" class="logo"> <!-- bookmark -->
+            Umar <span>Mushtaq</span>
+        </a>
+        <!-- Icon copied from Boxicons - 'menu icon' : use for smaller screens like tablets and less dimensions -->
+        <i class='bx bx-menu menu-icon' id="menu-icon"></i>
+        <i class='bx bx-x cross-icon'></i>
+
+        <!-- a prefixbx- for regular icons, bxs- for solid icons & bxl- for logos followed by the icon name and seperate class with thebx:  -->
+        <!-- navbar  -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a> <!-- '#home' : bookmark-->
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+
+    <!-- ---------------------------- Sections  (home, about , project,contact etc ) seperately  -->
+
+
+    <!-- -------------- 1. Home section -----------------  -->
+    <section class="home" id="home">
+
+        <div class="home-img">
+            <img src="./images/img1.jpg" alt="Img">
+        </div>
+
+        <div class="home-content">
+            <h1>It's <span>Umar</span></h1>
+            <h3 class="text-animation">
+                I'm a <span></span> <!-- <span> content is added in CSS (.text-animation css)-->
+            </h3>
+            <!-- Someting as web developer -->
+            <p>I like to build solid and scalable web products with good user experiences.</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"> <i class='bx bxl-linkedin-square'></i> </a>
+            <!-- LinkedIn : icon copied from boxicons (linkedIn-Square icon)-->
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a> <!-- Instagram-->
+            <a href="#"><i class='bx bxl-facebook-square'></i></a><!-- facebook-->
+            <a href="#"><i class='bx bxl-gitlab'></i></a><!-- github -->
+        </div>
+
+        <a href="#" class="btn">Hire Me</a>
+
+    </section> <!-- End 'home' section -->
+
+
+    <!-- ------------------------------------------------- About Section ------------------------------------  -->
+    <section class="about" id="about"> <!-- id for bookmark (navbar)-->
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+
+            <h3 class="text-animation">
+                <span></span> <!-- added in css-->
+            </h3>
+
+            <p>
+                I'm Umar, a web developer passionate about crafting exceptional digital experiences. With a foundation
+                in HTML, CSS, and JavaScript, I've expanded my skills to include libraries like React along with
+                bootstrap framework. Currently
+                pursuing a BTech in Computer Science and Engineering, I'm eager to explore the realms of technology,
+                design, and user experience. Outside of coding, I enjoy playing cricket, reading about tech trends, and
+                exploring new places.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="about-img">
+            <img src="./images/img1.jpg" alt="img">
+        </div>
+    </section> <!-- End about section -->
+
+
+    <!-- -------------------------------------------------- Projects Section ----------------------------  -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <div class="projects-container">
+            <!-- project 1 -->
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>Currency Converter</h4>
+                    <p>A dynamic currency converter using HTML, CSS, and JavaScript, leveraging an API to provide
+                        real-time exchange rates.</p>
+                    <a href="">Click to see</a>
+                </div>
+            </div>
+            <!-- project 2 -->
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>Tic Tac Toe</h4>
+                    <p>Interactive Tic Tac Toe game implemented with HTML, CSS, and JavaScript for a fun and engaging
+                        user experience.</p>
+                    <a href="">Click to see</a>
+                </div>
+            </div>
+            <!-- project 3 -->
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>Rock Paper Scissors</h4>
+                    <p>Classic Rock Paper Scissors game created with HTML, CSS, and JavaScript for an entertaining
+                        gaming experience</p>
+                    <a href="">Click to see</a>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>Calculator</h4>
+                    <p>Functional calculator application built with HTML, CSS, and JavaScript for basic arithmetic
+                        operations.</p>
+                    <a href="">Click to see</a>
+                </div>
+            </div>
+            <!-- project 5 -->
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>Landing Page</h4>
+                    <p>Modern landing page designed for Spotify download, crafted with HTML and CSS for a modern user
+                        experience.</p>
+                    <a href="">Click to see</a>
+                </div>
+            </div>
+            <!-- project 2 -->
+            <div class="project-box">
+                <div class="project-info">
+                    <h4>Amazon Clone</h4>
+                    <p>Replica of Amazon.in website created with HTML and CSS, showcasing product listings and a
+                        user-friendly interface</p>
+                    <a href="">Click to see</a>
+                </div>
+            </div>
+        </div>
+
+    </section> <!-- End project section -->
+
+    <!-- ---------------------------------------- Skills Section ----------------------------  -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Skills & <span>Experties</span></h2>
+
+        <div class="skill-box">
+            <!-- java  -->
+            <div class="box">
+                <div>
+                    <img src="./images/java.png" alt="Java">
+                </div>
+                <p>Java</p>
+            </div>
+            <!-- Html  -->
+            <div class="box">
+                <div>
+                    <img src="./images/html.png" alt="HTML">
+                </div>
+                <p>Html</p>
+            </div>
+            <!-- css  -->
+            <div class="box">
+                <div>
+                    <img src="./images/css.png" alt="CSS">
+                </div>
+                <p>CSS</p>
+            </div>
+            <!-- JavaScript -->
+            <div class="box">
+                <div>
+                    <img src="./images/javascript.png" alt="JavaScript">
+                </div>
+                <p>JavaScript</p>
+            </div>
+            <!-- Bootstrap  -->
+            <div class="box">
+                <div>
+                    <img src="./images/bootstrap.png" alt="Bootstrap">
+                </div>
+                <p>Bootstrap5</p>
+            </div>
+        </div>
+
+    </section> <!-- End skill section -->
+
+
+
+    <!-- -------------------------------------- Contact Section ----------------------------------  -->
+    <section class="contact" id="contact">
+        <h2 class="heading">
+            Contact <span>Me</span>
+        </h2>
+
+        <form action="#">
+
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="phone number">
+                <input type="text" placeholder="subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <!-- submit button  -->
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+    </section> <!-- End Contact Section -->
+
+
+    <!-- -------------------------------------------- Footer Section ----------------------------------  -->
+    <footer class="footer">
+
+        <h2 class="heading">Let's <span>Connect</span></h2>
+        <div class="social"><!--same as above: home section -->
+            <a href="#"> <i class='bx bxl-linkedin-square'></i> </a>
+            <!-- LinkedIn : icon copied from boxicons (linkedIn-Square icon)-->
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a> <!-- Instagram-->
+            <a href="#"><i class='bx bxl-facebook-square'></i></a><!-- facebook-->
+            <a href="#"><i class='bx bxl-gitlab'></i></a><!-- github -->
+        </div>
+
+    </footer>
+
+
+    <!-- Attach js file  -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
